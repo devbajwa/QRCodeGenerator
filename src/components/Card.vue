@@ -68,7 +68,7 @@ const isButtonDisabled = computed(() => {
     <button :disabled="isButtonDisabled" type="submit">Generate</button>
   </form>
   <div v-if="showLoader" class="loader">
-    <img src="public\loading.gif" alt="loader" />
+    <img src="/public/loading.gif" alt="loader" />
   </div>
   <div class="result" v-if="res">
     <img :src="`data:${code};base64,${res}`" alt="Image" class="w250"/>
