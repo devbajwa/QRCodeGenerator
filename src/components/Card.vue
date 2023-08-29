@@ -76,6 +76,10 @@ const isButtonDisabled = computed(() => {
     <a :href="`data:${code};base64,${res}`" class="download-btn btn" download="My QR Code">Download</a>
     <a href="#" @click="reset" class="btn">Reset</a>
   </div>
+  <footer>
+      <p>Developer <a href="https://www.devbajwa.com" target="_blank">Waqas Naeem Bajwa</a></p> <span class="seperator">|</span>
+      <div>Icon <a href="https://www.flaticon.com/free-animated-icons/loading" target="_blank" title="loading animated icons">Freepik - Flaticon</a></div>
+  </footer>
 </template>
 
 <style scoped>
@@ -155,7 +159,7 @@ button[disabled]:hover {
 }
 
 .result {
-  margin-top: 2rem;
+  margin-block: 2rem;
 }
 
 .loader img {
